@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="min-h-screen flex items-center justify-center bg-[#cfd4da]">
+      <div
+        class="lg:w-[700px] w-[400px] md:mx-12 bg-white lg:py-12 py-8 lg:px-6 px-4 flex flex-col items-center justify-center"
+      >
+        <div class="flex flex-col gap-2 items-center justify-center mb-2">
+          <h1 class="font-bold lg:text-2xl text-xl text-teal-800">
+            Percentage Calculator
+          </h1>
+          <p class="text-[12px] text-teal-800 font-normal">
+            Calculate percentage for free.
+          </p>
+        </div>
+        <div
+          class="w-full m-6 lg:py-12 py-8 flex flex-col lg:gap-6 gap-4 items-center justify-center border-b border-t border-solid border-[#f9f9fa]"
+        >
+          <div class="flex lg:gap-3 gap-2 items-center">
+            <span>What is</span>
+            <input
+              type="number"
+              name="percent"
+              class="text-[#5b6cbc]"
+              id="percent"
+              required
+            />
+            <span>% of</span>
+            <input
+              type="number"
+              name="value"
+              class="text-[#5b6cbc]"
+              id="num"
+              required
+            />
+            <span>?</span>
+          </div>
+          <div class="flex items-center justify-center my-4">
+            <h1
+              class="my-4 text-[#5b6cbc] font-bold lg:text-3xl text-2xl"
+              id="answer"
+            >
+              0
+            </h1>
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <button
+            onclick="calcPercent()"
+            class="p-2 px-4 text-white bg-[#5b6cbc] border-none outline-none rounded"
+          >
+            Calculate
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
